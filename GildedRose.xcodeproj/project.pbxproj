@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		667CD587237179C600EBDB49 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667CD586237179C600EBDB49 /* main.swift */; };
+		667CD590237179E500EBDB49 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667CD58D237179E500EBDB49 /* main.swift */; };
+		667CD591237179E500EBDB49 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667CD58E237179E500EBDB49 /* Item.swift */; };
+		667CD592237179E500EBDB49 /* GildedRose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667CD58F237179E500EBDB49 /* GildedRose.swift */; };
+		667CD59A23717ADF00EBDB49 /* GildedRoseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667CD59923717ADF00EBDB49 /* GildedRoseTests.swift */; };
+		667CD59F23717BAA00EBDB49 /* GildedRose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667CD58F237179E500EBDB49 /* GildedRose.swift */; };
+		667CD5A023717BAC00EBDB49 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667CD58E237179E500EBDB49 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,11 +29,23 @@
 
 /* Begin PBXFileReference section */
 		667CD583237179C600EBDB49 /* GildedRose */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GildedRose; sourceTree = BUILT_PRODUCTS_DIR; };
-		667CD586237179C600EBDB49 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		667CD58D237179E500EBDB49 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../../Sources/main.swift; sourceTree = "<group>"; };
+		667CD58E237179E500EBDB49 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		667CD58F237179E500EBDB49 /* GildedRose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GildedRose.swift; sourceTree = "<group>"; };
+		667CD59723717ADF00EBDB49 /* GildedRoseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GildedRoseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		667CD59923717ADF00EBDB49 /* GildedRoseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GildedRoseTests.swift; sourceTree = "<group>"; };
+		667CD59B23717ADF00EBDB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		667CD580237179C600EBDB49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		667CD59423717ADF00EBDB49 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				667CD585237179C600EBDB49 /* GildedRose */,
+				667CD59823717ADF00EBDB49 /* GildedRoseTests */,
 				667CD584237179C600EBDB49 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				667CD583237179C600EBDB49 /* GildedRose */,
+				667CD59723717ADF00EBDB49 /* GildedRoseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +76,20 @@
 		667CD585237179C600EBDB49 /* GildedRose */ = {
 			isa = PBXGroup;
 			children = (
-				667CD586237179C600EBDB49 /* main.swift */,
+				667CD58F237179E500EBDB49 /* GildedRose.swift */,
+				667CD58E237179E500EBDB49 /* Item.swift */,
+				667CD58D237179E500EBDB49 /* main.swift */,
 			);
 			path = GildedRose;
+			sourceTree = "<group>";
+		};
+		667CD59823717ADF00EBDB49 /* GildedRoseTests */ = {
+			isa = PBXGroup;
+			children = (
+				667CD59923717ADF00EBDB49 /* GildedRoseTests.swift */,
+				667CD59B23717ADF00EBDB49 /* Info.plist */,
+			);
+			path = GildedRoseTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +112,23 @@
 			productReference = 667CD583237179C600EBDB49 /* GildedRose */;
 			productType = "com.apple.product-type.tool";
 		};
+		667CD59623717ADF00EBDB49 /* GildedRoseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 667CD59C23717ADF00EBDB49 /* Build configuration list for PBXNativeTarget "GildedRoseTests" */;
+			buildPhases = (
+				667CD59323717ADF00EBDB49 /* Sources */,
+				667CD59423717ADF00EBDB49 /* Frameworks */,
+				667CD59523717ADF00EBDB49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GildedRoseTests;
+			productName = GildedRoseTests;
+			productReference = 667CD59723717ADF00EBDB49 /* GildedRoseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +140,9 @@
 				ORGANIZATIONNAME = "Jose Servet Font";
 				TargetAttributes = {
 					667CD582237179C600EBDB49 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					667CD59623717ADF00EBDB49 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -110,16 +160,39 @@
 			projectRoot = "";
 			targets = (
 				667CD582237179C600EBDB49 /* GildedRose */,
+				667CD59623717ADF00EBDB49 /* GildedRoseTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		667CD59523717ADF00EBDB49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		667CD57F237179C600EBDB49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				667CD587237179C600EBDB49 /* main.swift in Sources */,
+				667CD590237179E500EBDB49 /* main.swift in Sources */,
+				667CD592237179E500EBDB49 /* GildedRose.swift in Sources */,
+				667CD591237179E500EBDB49 /* Item.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		667CD59323717ADF00EBDB49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667CD59A23717ADF00EBDB49 /* GildedRoseTests.swift in Sources */,
+				667CD5A023717BAC00EBDB49 /* Item.swift in Sources */,
+				667CD59F23717BAA00EBDB49 /* GildedRose.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +332,40 @@
 			};
 			name = Release;
 		};
+		667CD59D23717ADF00EBDB49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GildedRoseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.everis.GildedRoseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		667CD59E23717ADF00EBDB49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GildedRoseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.everis.GildedRoseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -276,6 +383,15 @@
 			buildConfigurations = (
 				667CD58B237179C600EBDB49 /* Debug */,
 				667CD58C237179C600EBDB49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		667CD59C23717ADF00EBDB49 /* Build configuration list for PBXNativeTarget "GildedRoseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				667CD59D23717ADF00EBDB49 /* Debug */,
+				667CD59E23717ADF00EBDB49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
